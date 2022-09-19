@@ -24,6 +24,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Then boot up MySQL Workbench and start a new server. 
+Then boot up MySQL Workbench and start a new server with the project name of "project" on port 3306.
+
+
 
 The initial DB is located in the MySQL folder and named DatabaseV1Team1.sql, to use this you will need to download it and then import it to your local MySQL Workbench environment.
