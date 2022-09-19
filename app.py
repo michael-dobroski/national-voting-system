@@ -31,7 +31,7 @@ STATES = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '9c41f7884fdcc89b3faa8f1bff86f345' # need it for db queries
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:iowa@127.0.0.1:3306/project' # change!
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:<MYSQL PASSWORD>@127.0.0.1:3306/project' # change!
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = FALSE
 
 db = SQLAlchemy(app)
