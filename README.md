@@ -1,6 +1,6 @@
 # National Voting System
 
-This is an in-depth software engineering project from my academic days at the University of Iowa. It was an Agile simulation project that took place over the course of one semester (five months). We used a Hybrid Agile-Scrum approach to capitalize on the incremental client requirements and four person team size.
+This is an in-depth software engineering project from my academic days at the University of Iowa. It was an Agile simulation project that took place over the course of one semester (five months). We used a Hybrid Agile-Scrum approach to capitalize on the incremental client requirements and four person team size. The tech stack used was Python Flask with MySQL.
 
 ## Features
 
@@ -14,9 +14,9 @@ In-depth documentation of these use-cases can be found [here](https://docs.googl
 
 ## How to Run
 
-Open the project in your favorite IDE. Make sure you have the latest version of Python with Pip installed.
+Open the project in your favorite IDE. Make sure you have the latest version of Python with PIP installed.
 
-Then run the following lines of code in the terminal to create a virtual environment and download the necessary packages.
+Then run the following series of commands in the terminal to create a virtual environment and download the necessary packages.
 
 ```
 py -m venv venv
@@ -24,5 +24,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+Then boot up MySQL Workbench and start a new server. 
 
 The initial DB is located in the MySQL folder and named DatabaseV1Team1.sql, to use this you will need to download it and then import it to your local MySQL Workbench environment.
