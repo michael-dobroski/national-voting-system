@@ -10,7 +10,7 @@ In-depth documentation of these use-cases can be found [here](https://docs.googl
 
 ## Screenshots
 
-
+Going to add these very soon ...
 
 ## How to Run
 
@@ -26,6 +26,16 @@ pip install -r requirements.txt
 
 Then boot up MySQL Workbench and start a new server under root with the project name of "project" on port 3306. Remember your password.
 
-Navigate to Server > Data Import. Tick the "Import from Self-Contained File" radio button and change the file to 
+Navigate to Server > Data Import. Tick the "Import from Self-Contained File" radio button and change the file to the "example.sql" file that you downloaded from this directory. This contains some example data but you can select the "DDL.sql" file instead for a blank set of data to build from.
 
-The initial DB is located in the MySQL folder and named DatabaseV1Team1.sql, to use this you will need to download it and then import it to your local MySQL Workbench environment.
+Set the Default Target Schema to "project" then click "Start Import" on the bottom-right.
+
+Then open the code for app.py and search for "<MYSQL PASSWORD>" without the quotes on line 34. Replace this with your MySQL password.
+
+Next, run the following code in the terminal of your IDE.
+
+```
+py app.py
+```
+
+Now navigate [here](http://127.0.0.1:5000/index.html). And you're set!
